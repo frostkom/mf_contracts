@@ -1,13 +1,15 @@
 <?php
 /*
 Plugin Name: MF Contract
-Plugin URI: 
+Plugin URI: https://github.com/frostkom/mf_contracts
 Description: 
-Version: 1.0.10
+Version: 1.0.11
 Author: Martin Fors
 Author URI: http://frostkom.se
 Text Domain: lang_contract
 Domain Path: /lang
+
+GitHub Plugin URI: frostkom/mf_contracts
 */
 
 if(is_admin())
