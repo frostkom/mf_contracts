@@ -111,8 +111,6 @@ function column_cell_contract($col, $id)
 
 function meta_boxes_contract($meta_boxes)
 {
-	global $wpdb;
-
 	$meta_prefix = "mf_contract_";
 
 	$meta_boxes[] = array(
