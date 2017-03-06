@@ -11,6 +11,7 @@ function init_contract()
 	$args = array(
 		'labels' => $labels,
 		'public' => true,
+		'exclude_from_search' => true,
 		'menu_position' => 99,
 		'supports' => array('title'), //, 'editor'
 		'hierarchical' => true,
