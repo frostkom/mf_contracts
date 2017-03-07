@@ -85,24 +85,21 @@ function column_cell_contract($col, $id)
 			{
 				$renew = check_var('renew', 'int');
 
-				if($renew > 0 && $renew == $id)
+				if($renew > 0 && $renew == $id && wp_verify_nonce($_REQUEST['_wpnonce'], 'contract_renew_'.$renew))
 				{
-					if(wp_verify_nonce($_REQUEST['_wpnonce'], 'contract_renew'))
-					{
-						$post_end_date = get_post_meta($id, $meta_prefix.'end_date', true);
-						$post_expiration_date = $post_meta;
-						$post_extends = get_post_meta($id, $meta_prefix.'extends', true);
+					$post_end_date = get_post_meta($id, $meta_prefix.'end_date', true);
+					$post_expiration_date = $post_meta;
+					$post_extends = get_post_meta($id, $meta_prefix.'extends', true);
 
-						update_post_meta($id, $meta_prefix.'start_date', date("Y-m-d", strtotime($post_end_date." +1 day")));
-						update_post_meta($id, $meta_prefix.'end_date', date("Y-m-d", strtotime($post_end_date." +".$post_extends." month")));
-						update_post_meta($id, $meta_prefix.'expiration_date', date("Y-m-d", strtotime($post_expiration_date." +".$post_extends." month")));
-					}
+					update_post_meta($id, $meta_prefix.'start_date', date("Y-m-d", strtotime($post_end_date." +1 day")));
+					update_post_meta($id, $meta_prefix.'end_date', date("Y-m-d", strtotime($post_end_date." +".$post_extends." month")));
+					update_post_meta($id, $meta_prefix.'expiration_date', date("Y-m-d", strtotime($post_expiration_date." +".$post_extends." month")));
 				}
 
 				else
 				{
 					echo "<div class='row-actions'>
-						<a href='".wp_nonce_url(admin_url("edit.php?post_type=mf_contract&renew=".$id), 'contract_renew')."'>".__("Renew", 'lang_contract')."</a>
+						<a href='".wp_nonce_url(admin_url("edit.php?post_type=mf_contract&renew=".$id), 'contract_renew_'.$id)."'>".__("Renew", 'lang_contract')."</a>
 					</div>";
 				}
 			}
