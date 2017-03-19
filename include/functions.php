@@ -13,11 +13,10 @@ function init_contract()
 		'public' => true,
 		'exclude_from_search' => true,
 		'menu_position' => 99,
-		'supports' => array('title'), //, 'editor'
+		'supports' => array('title'),
 		'hierarchical' => true,
 		'has_archive' => false,
 		'menu_icon' => 'dashicons-clipboard',
-		//'capability_type' => 'page',
 	);
 
 	register_post_type('mf_contract', $args);
