@@ -157,6 +157,7 @@ function meta_boxes_contract($meta_boxes)
 				'name' => __("Extends", 'lang_contract')." (".__("Months", 'lang_contract').")",
 				'id' => $meta_prefix.'extends',
 				'type' => 'number',
+				'std' => 12,
 			),
 		)
 	);
