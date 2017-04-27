@@ -113,7 +113,7 @@ function meta_boxes_contract($meta_boxes)
 	$meta_boxes[] = array(
 		'id' => $meta_prefix.'settings',
 		'title' => __("Settings", 'lang_contract'),
-		'pages' => array('mf_contract'),
+		'post_types' => array('mf_contract'),
 		//'context' => 'side',
 		'priority' => 'low',
 		'fields' => array(
