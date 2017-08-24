@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-01 11:22+0100\n"
+"POT-Creation-Date: 2017-08-24 09:55+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Martin Fors\n"
 "Language-Team: \n"
@@ -27,40 +27,40 @@ msgid "There are soon to be expired contracts"
 msgstr "Det finns avtal som snart går ut"
 
 #: ../include/functions.php:58
-#: ../include/functions.php:136
+#: ../include/functions.php:133
 msgid "End date"
 msgstr "Slutdatum"
 
 #: ../include/functions.php:59
-#: ../include/functions.php:124
+#: ../include/functions.php:121
 msgid "Start date"
 msgstr "Startdatum"
 
 #: ../include/functions.php:60
-#: ../include/functions.php:148
+#: ../include/functions.php:145
 msgid "Expiration date"
 msgstr "Förfallodatum"
 
 #: ../include/functions.php:61
-#: ../include/functions.php:160
+#: ../include/functions.php:157
 msgid "Extends"
 msgstr "Förlängs"
 
-#: ../include/functions.php:104
+#: ../include/functions.php:101
 msgid "Renew"
 msgstr "Förnya"
 
-#: ../include/functions.php:118
+#: ../include/functions.php:115
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ../include/functions.php:129
-#: ../include/functions.php:141
-#: ../include/functions.php:153
+#: ../include/functions.php:126
+#: ../include/functions.php:138
+#: ../include/functions.php:150
 msgid "yy-mm-dd"
 msgstr "yy-mm-dd"
 
-#: ../include/functions.php:160
+#: ../include/functions.php:157
 msgid "Months"
 msgstr "Månader"
 
