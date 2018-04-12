@@ -12,7 +12,7 @@ function init_contract()
 		'labels' => $labels,
 		'public' => true,
 		'exclude_from_search' => true,
-		'menu_position' => 99,
+		'menu_position' => 100,
 		'menu_icon' => 'dashicons-clipboard',
 		'supports' => array('title'),
 		'hierarchical' => true,
