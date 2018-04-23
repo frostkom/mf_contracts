@@ -11,6 +11,7 @@ function init_contract()
 	$args = array(
 		'labels' => $labels,
 		'public' => true,
+		'show_in_nav_menus' => false,
 		'exclude_from_search' => true,
 		'menu_position' => 100,
 		'menu_icon' => 'dashicons-clipboard',
