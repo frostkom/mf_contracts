@@ -85,7 +85,7 @@ function column_cell_contract($col, $id)
 			{
 				$renew = check_var('renew', 'int');
 
-				if($renew > 0 && $renew == $id && wp_verify_nonce($_REQUEST['_wpnonce'], 'contract_renew_'.$renew))
+				if($renew > 0 && $renew == $id && wp_verify_nonce($_REQUEST['_wpnonce_contact_renew'], 'contract_renew_'.$renew))
 				{
 					$post_end_date = get_post_meta($id, $meta_prefix.'end_date', true);
 					$post_expiration_date = $post_meta;
@@ -99,7 +99,7 @@ function column_cell_contract($col, $id)
 				else
 				{
 					echo "<div class='row-actions'>
-						<a href='".wp_nonce_url(admin_url("edit.php?post_type=mf_contract&renew=".$id), 'contract_renew_'.$id)."'>".__("Renew", 'lang_contract')."</a>
+						<a href='".wp_nonce_url(admin_url("edit.php?post_type=mf_contract&renew=".$id), 'contract_renew_'.$id, '_wpnonce_contract_renew')."'>".__("Renew", 'lang_contract')."</a>
 					</div>";
 				}
 			}
