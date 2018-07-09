@@ -68,17 +68,19 @@ function column_cell_contract($col, $id)
 {
 	$meta_prefix = "mf_contract_";
 
-	$post_meta = get_post_meta($id, $meta_prefix.$col, true);
-
 	switch($col)
 	{
 		case 'start_date':
 		case 'end_date':
 		case 'extends':
+			$post_meta = get_post_meta($id, $meta_prefix.$col, true);
+
 			echo $post_meta;
 		break;
 
 		case 'expiration_date':
+			$post_meta = get_post_meta($id, $meta_prefix.$col, true);
+
 			echo $post_meta;
 
 			if($post_meta < date("Y-m-d", strtotime("+2 week")))
