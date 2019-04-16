@@ -127,7 +127,7 @@ function meta_boxes_contract($meta_boxes)
 				'js_options' => array(
 					//'autoSize' => true,
 					'dateFormat' => __("yy-mm-dd", 'lang_contract'),
-					'numberOfMonths'  => 1,
+					'numberOfMonths' => 1,
 					//'showButtonPanel' => true,
 				),
 				'attributes' => array(),
@@ -139,7 +139,7 @@ function meta_boxes_contract($meta_boxes)
 				'js_options' => array(
 					//'autoSize' => true,
 					'dateFormat' => __("yy-mm-dd", 'lang_contract'),
-					'numberOfMonths'  => 1,
+					'numberOfMonths' => 1,
 					//'showButtonPanel' => true,
 				),
 				'attributes' => array(),
@@ -151,7 +151,7 @@ function meta_boxes_contract($meta_boxes)
 				'js_options' => array(
 					//'autoSize' => true,
 					'dateFormat' => __("yy-mm-dd", 'lang_contract'),
-					'numberOfMonths'  => 1,
+					'numberOfMonths' => 1,
 					//'showButtonPanel' => true,
 				),
 				'attributes' => array(),

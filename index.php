@@ -3,7 +3,7 @@
 Plugin Name: MF Contract
 Plugin URI: https://github.com/frostkom/mf_contracts
 Description: 
-Version: 1.0.26
+Version: 1.0.27
 Licence: GPLv2 or later
 Author: Martin Fors
 Author URI: https://frostkom.se
